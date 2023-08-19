@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Foodie is Goodie</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Foodie is Goodie</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Meal
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Indian Main Course</a>
+                <a class="dropdown-item" href="#">Indian Snacks</a>
+              </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Know what you are eating</a>
+              </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="button" class="btn btn-info mx-1">Search</button>
+          </form>
+          <div class="mx=2">
+            <button class="btn btn-info mx-1" data-toggle="modal" data-target="#loginModal">Login</button>
+            <button class="btn btn-info" data-toggle="modal" data-target="#signupModal">SignUp</button>
+          </div>
+        </div>
+      </nav>
+
+      
+      
+      <!--Login Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="loginModalLabel">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--SignUp Modal -->
+      <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">Get an account</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="col-md-4 mb-3">
+                  <label for="validationServerUsername">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="cexampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="cexampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Hey, welcome.</strong> Let's find something for you to munch on!
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="container">
+      <br>
+      <h2>Let's look at some appetizing meals</h2>
+      <br>
+      <!--<div class="card" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1606491956391-70868b5d0f47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Pao Bhaji</h5>
+          <p class="card-text">Grab a tasty bite from the delicious, mouth-watering bpao bhaji. Check out the recipe right now.</p>
+          <a href="#" class="btn btn-outline-warning">Recipe</a>
+        </div>-->
+        <div class="card-columns">
+            <div class="card text-center">
+              <img src="https://images.unsplash.com/photo-1606491956391-70868b5d0f47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pao Bhaji</h5>
+                <p class="card-text">Grab a tasty bite from the delicious, mouth-watering bpao bhaji. Check out the recipe right now.</p>
+                <a href="#" class="btn btn-outline-warning">Recipe</a>
+              </div>
+            </div>
+            <div class="card p-3">
+                <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="...">
+            </div>
+            <div class="card text-center">
+              <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Samosa</h5>
+                <p class="card-text">Try this perfect snack with a hot cup of tea.</p>
+                <a href="#" class="btn btn-outline-danger">Recipe</a>
+              </div>
+            </div>
+            <div class="card bg-secondary text-white text-center p-3">
+              <blockquote class="blockquote mb-0">
+                <p>“First we eat, then we do everything else.”</p>
+                <footer class="blockquote-footer text-white">
+                  <small>
+                    M.F.K. Fisher
+                  </small>
+                </footer>
+              </blockquote>
+            </div>
+            <div class="card text-center">
+                <img src="https://images.unsplash.com/photo-1534939561126-855b8675edd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Chicken curry</h5>
+                <p class="card-text">Check out the simple, easy and perfect recipe to eat with rice.</p>
+                <a href="#" class="btn btn-outline-warning">Recipe</a>
+              </div>
+            </div>
+            <div class="card p-3">
+                <img src="https://images.unsplash.com/photo-1509358271058-acd22cc93898?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+            </div>
+            <div class="card text-center">
+                <img src="https://images.unsplash.com/photo-1631452180539-96aca7d48617?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Paneer Butter Masala</h5>
+                <p class="card-text">Looking for easy to make paneer butter masala, click below.</p>
+                <a href="#" class="btn btn-outline-danger">Recipe</a>
+              </div>
+            </div>
+            <div class="card p-3">
+                <img src="https://images.unsplash.com/photo-1470549813517-2fa741d25c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGNvb2tpbmd8ZW58MHx8MHx8fDI%3D&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
+            </div>
+          </div>
+      </div>
+    </div>
+    
+    <br>
+    <div class="container"><footer class="site-footer">
+      <p>"Cooking is at once child's play and adult joy. And cooking done with care is an act of love." </p>
+      <p> ~ Craig Claiborne</p>
+    </footer>
+  </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
